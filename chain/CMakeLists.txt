@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.1)
+project (harmonic_chain)
+add_executable(harmonic_chain harmonic_chain.cpp)
+target_link_libraries(harmonic_chain lapack blas gfortran)
+install(TARGETS harmonic_chain DESTINATION bin)
